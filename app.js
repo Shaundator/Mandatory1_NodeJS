@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/frontPage/frontPage.html");
 });
 
+app.get("/note-menu", (req, res) => {
+    res.sendFile(__dirname + "/public/frontPage/frontPage.html")
+})
+
 app.listen(PORT, (error) => {
     if(error) {
         console.log(error);

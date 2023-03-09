@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-Front Page</title>
     <link rel="stylesheet" href="frontPage.css">
+    <script src="frontPage.js"></script>
 </head>
 <body>
     <h1>Front Page</h1>
+    <!-- Login Field -->
     <div id="login-field">
         <h3>Login</h3>
         <div id="login-input-field">
             <span>username: <input id="login-input-username" placeholder="Insert Username" /></span>
             <span>password: <input id="login-input-password" placeholder="Insert Password"/></span>
         </div>
+        <div id="login-field-button">
+            <button onclick="login(
+                document.getElementById('login-input-username').value,
+                document.getElementById('login-input-password').value);">Login</button>
+        </div>
     </div>
+
 </body>
 </html>
