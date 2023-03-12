@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-Front Page</title>
-    <link rel="stylesheet" href="frontPage.css">
     <script src="frontPage.js"></script>
 </head>
 <body>
-    <h1>Front Page</h1>
-    <!-- Login Field -->
-    <div id="login-field">
-        <h3>Login</h3>
-        <div id="login-input-field">
-            <span>username: <input id="login-input-username" placeholder="Insert Username" /></span>
-            <span>password: <input id="login-input-password" placeholder="Insert Password"/></span>
-        </div>
-        <div id="login-field-button">
+
+    <div>
+        <h1>Login</h1>
+    </div>
+
+    <div> <!-- Login Field -->
+        <div> <!-- Login Input Field -->
+            <div>           
+                <p>Username:</p>
+                <input id="login-input-username" placeholder="Insert Username" />
+            </div>
+            <div>
+                <p>Password:</p>
+                <input id="login-input-password" placeholder="Insert Password" />
+            </div>
             <button onclick="login(
-                document.getElementById('login-input-username').value,
-                document.getElementById('login-input-password').value);">Login</button>
+            document.getElementById('login-input-username').value,
+            document.getElementById('login-input-password').value);">Login</button>
         </div>
+        
     </div>
 
 </body>

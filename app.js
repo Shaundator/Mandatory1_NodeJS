@@ -109,6 +109,12 @@ function patchNote(oldNote, newNote){
     }
 }
 
+function validateCurrentUser(note){
+    if(note.author == localStorage.getItem('current-username')){
+        return true;
+    }
+    return false;
+}
 
 
 const dummyNotes = [
